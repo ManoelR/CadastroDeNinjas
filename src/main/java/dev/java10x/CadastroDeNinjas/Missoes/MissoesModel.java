@@ -23,7 +23,7 @@ public class MissoesModel {
 
     private String dificuldade;
 
-    // @OneToMany -- Uma missão pode ter muitos ninjas
+    // @OneToMany -- Uma missão pode ter vários ninjas
     @OneToMany(mappedBy = "missoes")
     private List<NinjaModel> ninjas;
 
