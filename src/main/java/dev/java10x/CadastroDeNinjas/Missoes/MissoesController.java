@@ -2,7 +2,7 @@ package dev.java10x.CadastroDeNinjas.Missoes;
 import org.springframework.web.bind.annotation.*;
 
 @RestController // É uma rota para as API's
-@RequestMapping("missoes") // Mapeia as API's
+@RequestMapping("/missoes") // Mapeia as API's
 public class MissoesController {
 
     // GET -- Manda uma requisição para mostrar as missões
