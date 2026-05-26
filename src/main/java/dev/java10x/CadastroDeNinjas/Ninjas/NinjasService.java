@@ -22,9 +22,10 @@ public class NinjasService {
         return ninjaRepository.findAll();
     }
 
-    // Listar por ID
-    public Optional<NinjaModel> listarID(long id) {
-        return ninjaRepository.findById(id);
+    // Listar todos os ninjas por ID
+    public NinjaModel listarninjaPorId(long id) {
+        Optional<NinjaModel> ninjaPorId = ninjaRepository.findById(id);
+        return  ninjaPorId.orElse(null);
     }
 
 
